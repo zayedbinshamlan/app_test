@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:zayed_test/core/helpers/app_images.dart';
+import 'package:zayed_test/features/home/data/carousol_list.dart';
 
 class CarouselSection extends StatelessWidget {
   const CarouselSection({super.key});
@@ -13,12 +13,9 @@ class CarouselSection extends StatelessWidget {
       child: CarouselView(
           itemExtent: MediaQuery.of(context).size.width - 32,
           children: List.generate(
-            3,
+            carousolList.length,
             (index) {
-              return Image.asset(
-                AppImages.carousolImg,
-                fit: BoxFit.fill,
-              );
+              return Image.asset(carousolList[index], fit: BoxFit.fill);
             },
           )),
     );

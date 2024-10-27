@@ -11,9 +11,11 @@ class AppImages {
   static const bagIcon = '$rootSvgs/bag_icon.svg';
   static const ordersIcon = '$rootSvgs/orders_icon.svg';
   static const moreIcon = '$rootSvgs/more_icon.svg';
-  static const carousolImg = '$rootImages/anh-nguyen-kcA-c3f_3FE-unsplash.png';
+  static const carousolImgOne = '$rootImages/carousol_img_one.png';
+  static const carousolImgTwo = '$rootImages/carousol_img_two.jpeg';
+  static const carousolImgThree = '$rootImages/carousol_img_three.png';
   static const itemImg = '$rootImages/item_img.png';
-   static const addIcon = '$rootSvgs/add_icon.svg';
+  static const addIcon = '$rootSvgs/add_icon.svg';
 
   ///
 }

@@ -4,6 +4,7 @@ import 'package:zayed_test/features/home/ui/widgets/categories_list_view.dart';
 import 'package:zayed_test/features/home/ui/widgets/delevery_address_section.dart';
 import 'package:zayed_test/features/home/ui/widgets/header_section.dart';
 import 'package:zayed_test/features/home/ui/widgets/products_list_view_section.dart';
+
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
@@ -11,17 +12,12 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
       body: SafeArea(
-        child: Stack(
-          alignment: Alignment.bottomCenter,
+        child: Column(
           children: [
-            Column(
-              children: [
-                HeaderSection(),
-                CarouselSection(),
-                DeleveryAddressSection(),
-                ProductsListViewSection(),
-              ],
-            ),
+            HeaderSection(),
+            CarouselSection(),
+            DeleveryAddressSection(),
+            ProductsListViewSection(),
             CategoriesListView()
           ],
         ),
@@ -30,10 +26,3 @@ class HomeScreen extends StatelessWidget {
   }
 }
 
-
-List<String> itemList = [
-  'Ramadan deals',
-  'Main dishes',
-  'Side dishes',
-  'For sharing'
-];

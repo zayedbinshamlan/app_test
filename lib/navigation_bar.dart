@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -29,7 +31,7 @@ class _HomeTabControllerViewState extends State<HomeTabControllerView> {
       resizeToAvoidBottomInset: true,
       stateManagement: true,
       hideNavigationBarWhenKeyboardAppears: true,
-      // padding: EdgeInsets.only(top: 8.0.h),
+      padding: EdgeInsets.zero,
       isVisible: true,
       animationSettings: const NavBarAnimationSettings(
         navBarItemAnimation: ItemAnimationSettings(
@@ -44,7 +46,7 @@ class _HomeTabControllerViewState extends State<HomeTabControllerView> {
       ),
       confineToSafeArea: true,
       navBarStyle: NavBarStyle.simple,
-      navBarHeight: kBottomNavigationBarHeight,
+      navBarHeight: 60,
     );
   }
 
@@ -61,27 +63,32 @@ class _HomeTabControllerViewState extends State<HomeTabControllerView> {
     return [
       PersistentBottomNavBarItem(
           icon: SvgPicture.asset(AppImages.menuIcon),
-          inactiveIcon: SvgPicture.asset(AppImages.menuIcon),
+          inactiveIcon:
+              SvgPicture.asset(AppImages.menuIcon, color: AppColors.blackColor),
           title: ('Menu'),
           activeColorPrimary: AppColors.pinkColor,
           inactiveColorPrimary: AppColors.blackColor,
           textStyle: TextStyles.font12BlackRegular),
       PersistentBottomNavBarItem(
-          icon: SvgPicture.asset(AppImages.bagIcon),
+          icon: SvgPicture.asset(AppImages.bagIcon, color: AppColors.pinkColor),
           inactiveIcon: SvgPicture.asset(AppImages.bagIcon),
           title: ('Bag'),
           activeColorPrimary: AppColors.pinkColor,
           inactiveColorPrimary: AppColors.blackColor,
           textStyle: TextStyles.font12BlackRegular),
       PersistentBottomNavBarItem(
-          icon: SvgPicture.asset(AppImages.ordersIcon),
+          icon: SvgPicture.asset(AppImages.ordersIcon,
+              color: AppColors.pinkColor),
           inactiveIcon: SvgPicture.asset(AppImages.ordersIcon),
           title: ('Orders'),
           activeColorPrimary: AppColors.pinkColor,
           inactiveColorPrimary: AppColors.blackColor,
           textStyle: TextStyles.font12BlackRegular),
       PersistentBottomNavBarItem(
-          icon: SvgPicture.asset(AppImages.moreIcon),
+          icon: SvgPicture.asset(
+            AppImages.moreIcon,
+            color: AppColors.pinkColor,
+          ),
           inactiveIcon: SvgPicture.asset(AppImages.moreIcon),
           title: ('More'),
           activeColorPrimary: AppColors.pinkColor,
