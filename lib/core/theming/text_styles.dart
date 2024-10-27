@@ -19,4 +19,13 @@ class TextStyles {
       fontWeight: FontWeightHelper.medium,
       color: AppColors.pinkColor);
 
+  static TextStyle font16PinkRegular = TextStyle(
+      fontSize: 16.sp,
+      fontWeight: FontWeightHelper.regular,
+      color: AppColors.pinkColor);
+  static TextStyle font14WhiteMedium = TextStyle(
+      fontSize: 14.sp,
+      fontWeight: FontWeightHelper.medium,
+      color: AppColors.backgroundWhiteColor);
+
 }

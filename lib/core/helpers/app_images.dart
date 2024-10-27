@@ -15,7 +15,9 @@ class AppImages {
   static const carousolImgTwo = '$rootImages/carousol_img_two.jpeg';
   static const carousolImgThree = '$rootImages/carousol_img_three.png';
   static const itemImg = '$rootImages/item_img.png';
+  static const itemDetailsImg = '$rootImages/item_details_img.png';
   static const addIcon = '$rootSvgs/add_icon.svg';
+  static const minusIcon = '$rootSvgs/minus_icon.svg';
 
   ///
 }

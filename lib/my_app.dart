@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:zayed_test/core/routing/app_router.dart';
 import 'package:zayed_test/core/theming/app_colors.dart';
-import 'package:zayed_test/navigation_bar.dart';
 
 class MyApp extends StatelessWidget {
   final AppRouter appRouter;
@@ -20,7 +19,6 @@ class MyApp extends StatelessWidget {
             fontFamily: 'Vazirmatn'),
         debugShowCheckedModeBanner: false,
         onGenerateRoute: appRouter.generateRoute,
-        home: const HomeTabControllerView(),
       ),
     );
   }

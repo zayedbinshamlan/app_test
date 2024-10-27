@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:zayed_test/features/home/ui/home_screen.dart';
+import 'package:zayed_test/features/item_details/ui/item_details_screen.dart';
+import 'package:zayed_test/navigation_bar.dart';
 import 'routes.dart';
 
 class AppRouter {
@@ -8,7 +9,9 @@ class AppRouter {
     final arguments = settings.arguments;
     switch (settings.name) {
       case Routes.homeScreen:
-        return MaterialPageRoute(builder: (_) => const HomeScreen());
+        return MaterialPageRoute(builder: (_) => const HomeTabControllerView());
+      case Routes.itemDetailsScreen:
+        return MaterialPageRoute(builder: (_) => const ItemDetailsScreen());
       default:
         return MaterialPageRoute(
           builder: (_) => Scaffold(
