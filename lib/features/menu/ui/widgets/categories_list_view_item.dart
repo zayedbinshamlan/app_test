@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:zayed_test/core/theming/app_colors.dart';
 import 'package:zayed_test/core/theming/text_styles.dart';
-import 'package:zayed_test/features/home/data/categories_list.dart';
+import 'package:zayed_test/features/menu/data/categories_list.dart';
 
 class CategoriesListViewItem extends StatelessWidget {
   final int index;
@@ -30,10 +30,9 @@ class CategoriesListViewItem extends StatelessWidget {
           child: Text(
             categoriesList[index].categoryName,
             style: index == selectedIndex
-                ? TextStyles.font12PinkMedium.copyWith(fontSize: 14.sp)
-                : TextStyles.font32BlackMedium.copyWith(
-                    fontSize: 14.sp,
-                    color: AppColors.blackColor.withOpacity(0.6)),
+                ? TextStyles.font14PinkMedium
+                : TextStyles.font14WhiteMedium
+                    .copyWith(color: AppColors.blackColor.withOpacity(0.6)),
           ),
         ),
       ),

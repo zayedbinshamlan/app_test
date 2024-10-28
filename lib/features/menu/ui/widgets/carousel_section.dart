@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:zayed_test/features/home/data/carousol_list.dart';
+import 'package:zayed_test/features/menu/data/carousol_list.dart';
 
 class CarouselSection extends StatelessWidget {
   const CarouselSection({super.key});
@@ -12,6 +12,7 @@ class CarouselSection extends StatelessWidget {
       margin: EdgeInsets.only(left: 12.w, top: 8.h),
       child: CarouselView(
           itemExtent: MediaQuery.of(context).size.width - 32,
+          itemSnapping: true,
           children: List.generate(
             carousolList.length,
             (index) {

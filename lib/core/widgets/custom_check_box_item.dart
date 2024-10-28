@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:zayed_test/core/theming/app_colors.dart';
-import 'package:zayed_test/core/theming/font_weight_helper.dart';
 import 'package:zayed_test/core/theming/text_styles.dart';
 
 class CustomCheckBoxItem extends StatelessWidget {
@@ -30,9 +29,8 @@ class CustomCheckBoxItem extends StatelessWidget {
             child: Text(
           title,
           style: value == true
-              ? TextStyles.font32BlackMedium
-                  .copyWith(fontSize: 14.sp, fontWeight: FontWeightHelper.bold)
-              : TextStyles.font12BlackRegular.copyWith(fontSize: 14.sp),
+              ? TextStyles.font14BlackBold
+              : TextStyles.font14BlackRegular,
         )),
         Padding(
           padding: EdgeInsets.symmetric(horizontal: 18.0.w),

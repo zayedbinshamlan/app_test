@@ -8,12 +8,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:zayed_test/core/routing/app_router.dart';
-import 'package:zayed_test/my_app.dart';
+import 'package:zayed_test/test_app.dart';
 
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {
     // Build our app and trigger a frame.
-    await tester.pumpWidget(MyApp(
+    await tester.pumpWidget(TestApp(
       appRouter: AppRouter(),
     ));
 

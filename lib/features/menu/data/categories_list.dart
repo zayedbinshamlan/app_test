@@ -1,4 +1,4 @@
-import 'package:zayed_test/features/home/data/categories_model.dart';
+import 'package:zayed_test/features/menu/data/models/categories_model.dart';
 
 List<CategoryModel> categoriesList = [
   CategoryModel(categoryName: 'Ramadan deals'),

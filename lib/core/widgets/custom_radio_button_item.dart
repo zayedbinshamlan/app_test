@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:zayed_test/core/theming/app_colors.dart';
-import 'package:zayed_test/core/theming/font_weight_helper.dart';
 import 'package:zayed_test/core/theming/text_styles.dart';
 
 class CustomRadioButtonItem extends StatelessWidget {
@@ -30,14 +29,13 @@ class CustomRadioButtonItem extends StatelessWidget {
               child: Text(
             title,
             style: index == selectedIndex
-                ? TextStyles.font32BlackMedium.copyWith(
-                    fontSize: 14.sp, fontWeight: FontWeightHelper.bold)
-                : TextStyles.font12BlackRegular.copyWith(fontSize: 14.sp),
+                ? TextStyles.font14BlackBold
+                : TextStyles.font14BlackRegular,
           )),
           Text(
             price,
-            style: TextStyles.font12BlackRegular
-                .copyWith(fontSize: 14.sp, color: const Color(0xff524344)),
+            style: TextStyles.font14BlackRegular
+                .copyWith(color: AppColors.veryDarkGrayish),
           ),
           Container(
             height: 20.h,
@@ -48,7 +46,7 @@ class CustomRadioButtonItem extends StatelessWidget {
                   width: 1.80.w,
                   color: index == selectedIndex
                       ? AppColors.pinkColor
-                      : const Color(0xffDADBE1)),
+                      : AppColors.dividerColor),
               shape: BoxShape.circle,
             ),
             child: Visibility(

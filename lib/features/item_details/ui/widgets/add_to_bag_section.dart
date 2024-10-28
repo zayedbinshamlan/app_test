@@ -39,7 +39,7 @@ class _AddToBagSectionState extends State<AddToBagSection> {
       margin: EdgeInsets.symmetric(vertical: 10.h),
       decoration: BoxDecoration(
           border: Border(
-              top: BorderSide(width: 0.5.w, color: const Color(0xffDADBE1)))),
+              top: BorderSide(width: 0.5.w, color:AppColors.dividerColor))),
       child: Row(
         children: [
           Container(
@@ -61,7 +61,7 @@ class _AddToBagSectionState extends State<AddToBagSection> {
                 ),
                 Text(
                   '$itemCount',
-                  style: TextStyles.font32BlackMedium.copyWith(fontSize: 18.sp),
+                  style: TextStyles.font18BlackMedium,
                 ),
                 GestureDetector(
                     onTap: () => itemIncreament(),

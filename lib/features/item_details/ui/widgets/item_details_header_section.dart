@@ -31,7 +31,7 @@ class ItemDetailsHeaderSection extends StatelessWidget {
               flex: 2,
               child: Text('Chicken egg bowl',
                   style:
-                      TextStyles.font32BlackMedium.copyWith(fontSize: 18.sp)))
+                      TextStyles.font18BlackMedium))
         ],
       ),
     );

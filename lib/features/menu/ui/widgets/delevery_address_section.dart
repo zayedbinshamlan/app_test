@@ -31,7 +31,7 @@ class DeleveryAddressSection extends StatelessWidget {
                     overflow: TextOverflow.ellipsis,
                     'RHYA3696, 3696 Al Imam Saud Ibn Abdul Aziz Brand Road,',
                     style:
-                        TextStyles.font12BlackRegular.copyWith(fontSize: 14.sp),
+                        TextStyles.font14BlackRegular
                   ),
                 ],
               ),

@@ -4,8 +4,8 @@ import 'package:flutter_svg/svg.dart';
 import 'package:zayed_test/core/helpers/app_images.dart';
 import 'package:zayed_test/core/theming/text_styles.dart';
 
-class HeaderSection extends StatelessWidget {
-  const HeaderSection({super.key});
+class MenuHeaderSection extends StatelessWidget {
+  const MenuHeaderSection({super.key});
 
   @override
   Widget build(BuildContext context) {

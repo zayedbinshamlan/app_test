@@ -13,9 +13,8 @@ class NotesSection extends StatelessWidget {
         widget: TextField(
           decoration: InputDecoration(
               hintText: 'Add a Note',
-              hintStyle: TextStyles.font12BlackRegular.copyWith(
-                fontSize: 14.sp,
-              ),
+              hintStyle:
+                  TextStyles.font12BlackRegular.copyWith(fontSize: 14.sp),
               contentPadding: EdgeInsets.zero,
               border: const OutlineInputBorder(borderSide: BorderSide.none)),
         ));

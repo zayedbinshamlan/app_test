@@ -9,8 +9,24 @@ class TextStyles {
       fontWeight: FontWeightHelper.medium,
       color: AppColors.blackColor);
 
+  static TextStyle font14BlackBold = TextStyle(
+      fontSize: 14.sp,
+      fontWeight: FontWeight.bold,
+      color: AppColors.blackColor);
+
+  static TextStyle font18BlackMedium = TextStyle(
+      fontSize: 18.sp,
+      fontWeight: FontWeightHelper.medium,
+      color: AppColors.blackColor);
+
+
   static TextStyle font12BlackRegular = TextStyle(
       fontSize: 12.sp,
+      fontWeight: FontWeightHelper.regular,
+      color: AppColors.blackColor);
+      
+  static TextStyle font14BlackRegular = TextStyle(
+      fontSize: 14.sp,
       fontWeight: FontWeightHelper.regular,
       color: AppColors.blackColor);
 
@@ -19,13 +35,18 @@ class TextStyles {
       fontWeight: FontWeightHelper.medium,
       color: AppColors.pinkColor);
 
+  static TextStyle font14PinkMedium = TextStyle(
+      fontSize: 14.sp,
+      fontWeight: FontWeightHelper.medium,
+      color: AppColors.pinkColor);
+
   static TextStyle font16PinkRegular = TextStyle(
       fontSize: 16.sp,
       fontWeight: FontWeightHelper.regular,
       color: AppColors.pinkColor);
+
   static TextStyle font14WhiteMedium = TextStyle(
       fontSize: 14.sp,
       fontWeight: FontWeightHelper.medium,
       color: AppColors.backgroundWhiteColor);
-
 }
